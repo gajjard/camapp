@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Cylindrical Cam Design App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+    />
+
+    <style>
+      .back{
+      margin: 10px 40px 25px 0px;
+      }
+
+      .fo{
+      margin-top: 10px
+      }
+
+      .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height:90px;
+        background-color: #4C4C6D;
+        color: white;
+        text-align: center;
+       }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h3>Cylindrical Cam Design App</h3>
+    </div>
+
+    <!-- Form -->
+    <div class="container">
+      <form action="/send" method="POST">
+        <label for="Displacement">Displacement of follower</label>
+        <input
+          type="text"
+          placeholder="Displacement of follower"
+          class="u-full-width"
+          name="h"/>
+
+        <label for="SHM Rise">Angle of SHM Rise</label>
+        <input
+          type="text"
+          placeholder="Angle of SHM Rise"
+          class="u-full-width"
+          name="SHMR"/>
+
+        <label for="Dwell">Angle of Dwell</label>
+        <input
+          type="text"
+          placeholder="Angle of Dwell"
+          class="u-full-width"
+          name="dwell"/>
+
+        <label for="SHM Fall">Angle of SHM Fall</label>
+        <input
+          type="text"
+          placeholder="Angle of SHM Fall"
+          class="u-full-width"
+          name="SHMF"/>
+
+        <label for="RPM">RPM of Cam</label>
+        <input
+          type="text"
+          placeholder="RPM of Cam"
+          class="u-full-width"
+          name="N"/>
+
+        <label for="Diameter">Diameter of Cam</label>
+        <input
+          type="text"
+          placeholder="Diameter of Cam"
+          class="u-full-width"
+          name="dia"/>
+
+
+        <input type="submit" value="Calculate" id="calc_btn" />
+        <br />
+
+        <div class="footer">
+          <div style="margin-top: 10px;">
+<!--              <img style='height: 20px; width: 20px; vertical-align:middle; margin-right: 8px;' src="https://cdn2.iconfinder.com/data/icons/social-media-applications/64/social_media_applications_14-linkedin-512.png"><a style='vertical-align:middle; margin-right: 40px;' href="https://www.linkedin.com/in/dhruvin-gajjar-437916108/">LinkdIn</a>-->
+
+              <img style='height: 20px; width: 20px; vertical-align:middle; margin-right: 8px;' src="https://image.flaticon.com/icons/png/512/1383/1383260.png" height="20px"><a style='vertical-align:middle; margin-right: 40px;' href="https://www.youtube.com/channel/UCbiBMrc7dAVMLfc5nGYphQA">Youtube</a>
+          </div>
+          <p class="back">©Dhruvin Gajjar. All Rights Reserved.</p>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
